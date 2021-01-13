@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-macos": "^0.63.0-0"
+    "react-native-macos": "^0.63.0-0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -21,6 +22,8 @@
     "@types/jest": "^25.2.3",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
+    "@types/styled-components": "^5.1.7",
+    "@types/styled-components-react-native": "^5.1.0",
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "husky": "^4.3.7",
@@ -44,6 +47,10 @@
     "*{.ts,.js}": [
       "eslint --ext .tsx,.ts --fix ./src",
       "prettier --write",
+      "git add"
+    ],
+    "*{.styled.ts}": [
+      "stylelint **/*.styled.ts",
       "git add"
     ]
   },
