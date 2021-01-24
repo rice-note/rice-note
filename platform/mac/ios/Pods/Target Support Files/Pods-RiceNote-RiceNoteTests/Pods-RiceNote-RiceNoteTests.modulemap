@@ -1,0 +1,6 @@
+module Pods_RiceNote_RiceNoteTests {
+  umbrella header "Pods-RiceNote-RiceNoteTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

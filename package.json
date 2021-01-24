@@ -1,45 +1,22 @@
 {
   "name": "rice-note",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
-  },
-  "dependencies": {
-    "react": "16.13.1",
-    "react-native": "0.63.4",
-    "react-native-macos": "^0.63.0-0",
-    "styled-components": "^5.2.1"
-  },
+  "workspaces": [
+    "platform/*",
+    "core/*"
+  ],
+  "repository": "git@github.com:XinOuyangPersonalTeam/rice-note.git",
+  "author": "<fex@0000o.net>",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4",
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@react-native-community/eslint-config": "^1.1.0",
-    "@types/jest": "^25.2.3",
-    "@types/react-native": "^0.63.2",
-    "@types/react-test-renderer": "^16.9.2",
-    "@types/styled-components": "^5.1.7",
-    "@types/styled-components-react-native": "^5.1.0",
-    "babel-jest": "^25.1.0",
-    "eslint": "^6.5.1",
-    "husky": "^4.3.7",
-    "jest": "^25.1.0",
-    "jest-junit": "^12.0.0",
-    "lint-staged": "^10.5.3",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "react-test-renderer": "16.13.1",
     "stylelint": "^13.8.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-scss": "^3.18.0",
-    "typescript": "^3.8.3"
+    "eslint": "^6.5.1",
+    "husky": "^4.3.7"
   },
   "husky": {
     "hooks": {
@@ -56,21 +33,6 @@
     "*{.styled.ts}": [
       "stylelint **/*.styled.ts",
       "git add"
-    ]
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "reporters": [
-      "default",
-      "jest-junit"
     ]
   }
 }
