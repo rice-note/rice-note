@@ -1,11 +1,11 @@
-require_relative '../node_modules/react-native-macos/scripts/react_native_pods'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../../../node_modules/react-native-macos/scripts/react_native_pods'
+require_relative '../../../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'rice-note-macOS' do
   platform :macos, '10.13'
   use_native_modules!
   use_react_native!(
-    :path => '../node_modules/react-native-macos',
+    :path => '../../../node_modules/react-native-macos',
     
     # To use Hermes, install the `hermes-engine-darwin` npm package, e.g.:
     #   $ yarn add 'hermes-engine-darwin@~0.5.3'
@@ -20,7 +20,7 @@ end
 target 'rice-note-iOS' do
   platform :ios, '10'
   use_native_modules!
-  use_react_native!(:path => '../node_modules/react-native-macos')
+  use_react_native!(:path => '../../../node_modules/react-native-macos')
 
   # Enables Flipper.
   #
