@@ -2,6 +2,28 @@
 # yarn lockfile v1
 
 
+"@actions/core@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.npm.taobao.org/@actions/core/download/@actions/core-1.2.6.tgz#a78d49f41a4def18e88ce47c2cac615d5694bf09"
+  integrity sha1-p41J9BpN7xjojOR8LKxhXVaUvwk=
+
+"@actions/github@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@actions/github/download/@actions/github-4.0.0.tgz#d520483151a2bf5d2dc9cd0f20f9ac3a2e458816"
+  integrity sha1-1SBIMVGiv10tyc0PIPmsOi5FiBY=
+  dependencies:
+    "@actions/http-client" "^1.0.8"
+    "@octokit/core" "^3.0.0"
+    "@octokit/plugin-paginate-rest" "^2.2.3"
+    "@octokit/plugin-rest-endpoint-methods" "^4.0.0"
+
+"@actions/http-client@^1.0.8":
+  version "1.0.9"
+  resolved "https://registry.npm.taobao.org/@actions/http-client/download/@actions/http-client-1.0.9.tgz#af1947d020043dbc6a3b4c5918892095c30ffb52"
+  integrity sha1-rxlH0CAEPbxqO0xZGIkglcMP+1I=
+  dependencies:
+    tunnel "0.0.6"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
   resolved "https://registry.npm.taobao.org/@babel/code-frame/download/@babel/code-frame-7.12.11.tgz?cache=0&sync_timestamp=1608076996164&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fcode-frame%2Fdownload%2F%40babel%2Fcode-frame-7.12.11.tgz"
@@ -1141,6 +1163,94 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@octokit/auth-token@^2.4.4":
+  version "2.4.5"
+  resolved "https://registry.npm.taobao.org/@octokit/auth-token/download/@octokit/auth-token-2.4.5.tgz?cache=0&sync_timestamp=1611596865357&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fauth-token%2Fdownload%2F%40octokit%2Fauth-token-2.4.5.tgz#568ccfb8cb46f36441fac094ce34f7a875b197f3"
+  integrity sha1-VozPuMtG82RB+sCUzjT3qHWxl/M=
+  dependencies:
+    "@octokit/types" "^6.0.3"
+
+"@octokit/core@^3.0.0":
+  version "3.2.5"
+  resolved "https://registry.npm.taobao.org/@octokit/core/download/@octokit/core-3.2.5.tgz#57becbd5fd789b0592b915840855f3a5f233d554"
+  integrity sha1-V77L1f14mwWSuRWECFXzpfIz1VQ=
+  dependencies:
+    "@octokit/auth-token" "^2.4.4"
+    "@octokit/graphql" "^4.5.8"
+    "@octokit/request" "^5.4.12"
+    "@octokit/types" "^6.0.3"
+    before-after-hook "^2.1.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/endpoint@^6.0.1":
+  version "6.0.11"
+  resolved "https://registry.npm.taobao.org/@octokit/endpoint/download/@octokit/endpoint-6.0.11.tgz?cache=0&sync_timestamp=1611596854466&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fendpoint%2Fdownload%2F%40octokit%2Fendpoint-6.0.11.tgz#082adc2aebca6dcefa1fb383f5efb3ed081949d1"
+  integrity sha1-CCrcKuvKbc76H7OD9e+z7QgZSdE=
+  dependencies:
+    "@octokit/types" "^6.0.3"
+    is-plain-object "^5.0.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/graphql@^4.5.8":
+  version "4.5.9"
+  resolved "https://registry.npm.taobao.org/@octokit/graphql/download/@octokit/graphql-4.5.9.tgz#2365831a1a88f4cb6fd4b0488edb6587d8243024"
+  integrity sha1-I2WDGhqI9Mtv1LBIjttlh9gkMCQ=
+  dependencies:
+    "@octokit/request" "^5.3.0"
+    "@octokit/types" "^6.0.3"
+    universal-user-agent "^6.0.0"
+
+"@octokit/openapi-types@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/@octokit/openapi-types/download/@octokit/openapi-types-3.3.0.tgz#8797af01feb524e3f4978e1c9bf7bc7c18ef9d25"
+  integrity sha1-h5evAf61JOP0l44cm/e8fBjvnSU=
+
+"@octokit/plugin-paginate-rest@^2.2.3":
+  version "2.9.0"
+  resolved "https://registry.npm.taobao.org/@octokit/plugin-paginate-rest/download/@octokit/plugin-paginate-rest-2.9.0.tgz?cache=0&sync_timestamp=1611709097862&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fplugin-paginate-rest%2Fdownload%2F%40octokit%2Fplugin-paginate-rest-2.9.0.tgz#f52c26850b019584be8dc55c0bd6257339c0fa43"
+  integrity sha1-9SwmhQsBlYS+jcVcC9YlcznA+kM=
+  dependencies:
+    "@octokit/types" "^6.6.0"
+
+"@octokit/plugin-rest-endpoint-methods@^4.0.0":
+  version "4.9.0"
+  resolved "https://registry.npm.taobao.org/@octokit/plugin-rest-endpoint-methods/download/@octokit/plugin-rest-endpoint-methods-4.9.0.tgz?cache=0&sync_timestamp=1611709098160&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fplugin-rest-endpoint-methods%2Fdownload%2F%40octokit%2Fplugin-rest-endpoint-methods-4.9.0.tgz#9b7ce7ea52ee9f08ccb5d5230f0e8c61572973b0"
+  integrity sha1-m3zn6lLunwjMtdUjDw6MYVcpc7A=
+  dependencies:
+    "@octokit/types" "^6.6.0"
+    deprecation "^2.3.1"
+
+"@octokit/request-error@^2.0.0":
+  version "2.0.5"
+  resolved "https://registry.npm.taobao.org/@octokit/request-error/download/@octokit/request-error-2.0.5.tgz?cache=0&sync_timestamp=1611596862832&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Frequest-error%2Fdownload%2F%40octokit%2Frequest-error-2.0.5.tgz#72cc91edc870281ad583a42619256b380c600143"
+  integrity sha1-csyR7chwKBrVg6QmGSVrOAxgAUM=
+  dependencies:
+    "@octokit/types" "^6.0.3"
+    deprecation "^2.0.0"
+    once "^1.4.0"
+
+"@octokit/request@^5.3.0", "@octokit/request@^5.4.12":
+  version "5.4.13"
+  resolved "https://registry.npm.taobao.org/@octokit/request/download/@octokit/request-5.4.13.tgz?cache=0&sync_timestamp=1611596853399&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Frequest%2Fdownload%2F%40octokit%2Frequest-5.4.13.tgz#eec5987b3e96f984fc5f41967e001170c6d23a18"
+  integrity sha1-7sWYez6W+YT8X0GWfgARcMbSOhg=
+  dependencies:
+    "@octokit/endpoint" "^6.0.1"
+    "@octokit/request-error" "^2.0.0"
+    "@octokit/types" "^6.0.3"
+    deprecation "^2.0.0"
+    is-plain-object "^5.0.0"
+    node-fetch "^2.6.1"
+    once "^1.4.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/types@^6.0.3", "@octokit/types@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.npm.taobao.org/@octokit/types/download/@octokit/types-6.6.0.tgz#165d0e7940d5f910b3373f02336c161dcdf097fe"
+  integrity sha1-Fl0OeUDV+RCzNz8CM2wWHc3wl/4=
+  dependencies:
+    "@octokit/openapi-types" "^3.3.0"
+    "@types/node" ">= 8"
+
 "@react-native-community/cli-debugger-ui@^4.13.1":
   version "4.13.1"
   resolved "https://registry.npm.taobao.org/@react-native-community/cli-debugger-ui/download/@react-native-community/cli-debugger-ui-4.13.1.tgz?cache=0&sync_timestamp=1605787620850&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40react-native-community%2Fcli-debugger-ui%2Fdownload%2F%40react-native-community%2Fcli-debugger-ui-4.13.1.tgz"
@@ -1409,6 +1519,11 @@
   version "14.14.20"
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.20.tgz"
   integrity sha1-95dIY+3SHR+KSUpz6OKzZYYVw0A=
+
+"@types/node@>= 8":
+  version "14.14.22"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
+  integrity sha1-DSnzgkcsTM872W/wzkfa9be4Sxg=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -2081,6 +2196,11 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+before-after-hook@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/before-after-hook/download/before-after-hook-2.1.0.tgz#b6c03487f44e24200dd30ca5e6a1979c5d2fb635"
+  integrity sha1-tsA0h/ROJCAN0wyl5qGXnF0vtjU=
 
 big-integer@^1.6.44:
   version "1.6.48"
@@ -2832,6 +2952,11 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/depd/download/depd-1.1.2.tgz"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+
+deprecation@^2.0.0, deprecation@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/deprecation/download/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
+  integrity sha1-Y2jL20Cr8zc7UlrIfkomDDpwCRk=
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -4439,6 +4564,11 @@ is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   integrity sha1-LBY7P6+xtgbZ0Xko8FwqHDjgdnc=
   dependencies:
     isobject "^3.0.1"
+
+is-plain-object@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/is-plain-object/download/is-plain-object-5.0.0.tgz#4427f50ab3429e9025ea7d52e9043a9ef4159344"
+  integrity sha1-RCf1CrNCnpAl6n1S6QQ6nvQVk0Q=
 
 is-regex@^1.1.1:
   version "1.1.1"
@@ -6072,7 +6202,7 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-node-fetch@^2.2.0, node-fetch@^2.6.0:
+node-fetch@^2.2.0, node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npm.taobao.org/node-fetch/download/node-fetch-2.6.1.tgz?cache=0&sync_timestamp=1599309179354&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-fetch%2Fdownload%2Fnode-fetch-2.6.1.tgz"
   integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
@@ -8211,6 +8341,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tunnel@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.npm.taobao.org/tunnel/download/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
+  integrity sha1-cvExSzSlsZLbASMk3yzFh8pH+Sw=
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.npm.taobao.org/tweetnacl/download/tweetnacl-0.14.5.tgz"
@@ -8356,6 +8491,11 @@ unist-util-stringify-position@^2.0.0:
   integrity sha1-zOO/oc34W6c3XR1bF73Eytqb2do=
   dependencies:
     "@types/unist" "^2.0.2"
+
+universal-user-agent@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/universal-user-agent/download/universal-user-agent-6.0.0.tgz#3381f8503b251c0d9cd21bc1de939ec9df5480ee"
+  integrity sha1-M4H4UDslHA2c0hvB3pOeyd9UgO4=
 
 universalify@^0.1.0:
   version "0.1.2"
