@@ -66,3 +66,6 @@ buck-out/
 
 # Test
 junit.xml
+
+yarn.lock
+fastlane/report.xml

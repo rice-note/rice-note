@@ -41,5 +41,3 @@ jobs:
           OSS_ACCESSKEYID: '${{ secrets.OSS_ACCESSKEYID }}'
           OSS_ACCESSKEYSECRET: '${{ secrets.OSS_ACCESSKEYSECRET }}'
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-
-  
