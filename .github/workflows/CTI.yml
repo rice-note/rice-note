@@ -9,4 +9,37 @@ on:
         description: Name Your CTI
         required: true
 
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dep
+        run: yarn
+
+      - name: Setup Fastlane
+        run: |
+          gem install bundler:1.17.2
+          pod install --project-directory=macos
+          bundle install
+
+      - name: Package Mac App
+        run: bundle exec fastlane ios build
+
+      - name: Setup Demobox
+        run: node scripts/github-robot/create-demobox/index.js
+        env:
+          OSS_ACCESSKEYID: '${{ secrets.OSS_ACCESSKEYID }}'
+          OSS_ACCESSKEYSECRET: '${{ secrets.OSS_ACCESSKEYSECRET }}'
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+
   
