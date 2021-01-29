@@ -1,4 +1,12 @@
 PODS:
+  - AppCenter (4.1.0):
+    - AppCenter/Analytics (= 4.1.0)
+    - AppCenter/Crashes (= 4.1.0)
+  - AppCenter/Analytics (4.1.0):
+    - AppCenter/Core
+  - AppCenter/Core (4.1.0)
+  - AppCenter/Crashes (4.1.0):
+    - AppCenter/Core
   - boost-for-react-native (1.63.0)
   - CocoaAsyncSocket (7.6.5)
   - CocoaLibEvent (1.0.0)
@@ -303,6 +311,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - AppCenter
   - boost-for-react-native (from `../node_modules/react-native-macos/third-party-podspecs/boost-for-react-native.podspec`)
   - DoubleConversion (from `../node_modules/react-native-macos/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native-macos/Libraries/FBLazyVector`)
@@ -355,6 +364,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AppCenter
     - CocoaAsyncSocket
     - CocoaLibEvent
     - Flipper
@@ -426,6 +436,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-macos/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppCenter: 8832b158d17e54845c3b88a91076218f0b07174d
   boost-for-react-native: dabda8622e76020607c2ae1e65cc0cda8b61479d
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
@@ -466,6 +477,6 @@ SPEC CHECKSUMS:
   Yoga: b26efe89bae2d15d292f37e00a322b144f37da95
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 13a2f62ffd245be3ee1a2cec12c3413ec515346f
+PODFILE CHECKSUM: 34ac14877bc77dd443e02b5ffb3c6b546b590a48
 
 COCOAPODS: 1.10.1

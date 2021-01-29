@@ -1,0 +1,21 @@
+fastlane_version '2.53.1'
+
+before_all do
+end
+
+platform :ios do
+   desc "Add description of lane"
+   lane :build do |options|
+     build_app(
+      workspace: "./macos/rice-note.xcworkspace",
+      configuration: "Release",
+      scheme: "rice-note-macOS",
+      silent: true,
+      clean: true,
+      archive_path: "./archives",
+      output_directory: "./build/",
+      export_method: "mac-application",
+      skip_package_pkg: true
+     )
+   end
+end

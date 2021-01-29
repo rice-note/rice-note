@@ -2,6 +2,8 @@
 #import "AppDelegate.h"
 
 #import <React/RCTRootView.h>
+@import AppCenter;
+@import AppCenterCrashes;
 
 @implementation ViewController
 
@@ -17,6 +19,10 @@
   [rootView setBackgroundColor:[NSColor windowBackgroundColor]];
   [rootView setFrame:[view bounds]];
   [rootView setAutoresizingMask:(NSViewMinXMargin | NSViewMinXMargin | NSViewMinYMargin | NSViewMaxYMargin | NSViewWidthSizable | NSViewHeightSizable)];
+  
+  [MSACAppCenter start:@"4a31d0f3-974c-43d3-85b6-7385886a78fa" withServices:@[
+    [MSACCrashes class]
+  ]];
 }
 
 @end

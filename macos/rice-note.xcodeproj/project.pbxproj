@@ -222,6 +222,7 @@
 					};
 					514201482437B4B30078DB4F = {
 						CreatedOnToolsVersion = 11.4;
+						DevelopmentTeam = 4YSSJ9YZEL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -519,8 +520,10 @@
 			baseConfigurationReference = 97DAA49A8FF4889818BFF36B /* Pods-rice-note-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 4YSSJ9YZEL;
 				INFOPLIST_FILE = "rice-note-macos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -529,7 +532,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = xin.ouyang.ricenote;
 				PRODUCT_NAME = "rice-note";
 				SDKROOT = macosx;
 			};
@@ -540,7 +543,9 @@
 			baseConfigurationReference = C31446FB523DB8E039D6D6F6 /* Pods-rice-note-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4YSSJ9YZEL;
 				INFOPLIST_FILE = "rice-note-macos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -549,7 +554,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = xin.ouyang.ricenote;
 				PRODUCT_NAME = "rice-note";
 				SDKROOT = macosx;
 			};
