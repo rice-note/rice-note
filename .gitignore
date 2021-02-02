@@ -69,3 +69,7 @@ junit.xml
 
 yarn.lock
 fastlane/report.xml
+
+.cache
+
+dist/
